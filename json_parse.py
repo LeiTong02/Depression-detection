@@ -13,19 +13,19 @@ class HandleClass:
     def __init__(self,path):
         self.__path = path
         
-    def __get_py(path,json_path):      
+    def __get_py(self,path,json_path):
         fileList = os.listdir(path)
         for filename in fileList:
             file_path = os.path.join(path,filename)
             if os.path.isdir(file_path):
-                get_py(file_path,json_path)
+                self.__get_py(file_path,json_path)
             elif filename[-5:].upper()=='.JSON':
                 json_path.append(file_path)              
         return json_path
 
     def ParseJson(self):
         json_path=[]
-        json_path = get_py(self.__path,json_path)
+        json_path = self.__get_py(self.__path,json_path)
         print(len(json_path))
         for json_file in json_path:
             data=[]
@@ -39,6 +39,9 @@ class HandleClass:
             
             with open(txt_file,'w',encoding="utf-8",errors="ignore") as f:
                 f.write(str(data))
+            with open(txt_file,'r',encoding="utf-8",errors="ignore") as f:
+
+                print(f.read())
         
         print("Finish")
         
@@ -51,7 +54,7 @@ class HandleClass:
     
 
 if __name__ == '__main__':
-    positive = HandleClass("/home/charles/tool/tweet-ubuntu/negative-undepressed")
+    positive = HandleClass("/Users/charles_tong/Desktop/Depression-detection/tweet-ubuntu/positive-depressed")
     positive.ParseJson()
     ''' 
     path = "/home/charles/tool/tweet-ubuntu/positive-depressed/txt/_JasmineRakhracreated_at-907409179.txt"
