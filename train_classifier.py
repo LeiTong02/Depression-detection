@@ -106,13 +106,16 @@ if __name__ == '__main__':
     while [] in negTest:
         negTest.remove([])
 
-    training_X = extract_features(posData) + extract_features(negData)
-    training_y = []
+    testing_X = extract_features(posTest) + extract_features(negTest)
+    testing_y = []
     for i in range(len(testing_X)):
-        if len(posData) >= (i + 1):
-            training_y.append(1)
+        if len(posTest) >= (i + 1):
+            testing_y.append(1)
         else:
-            training_y.append(0)
+            testing_y.append(0)
+
+    print (clf.score(testing_X,testing_y))
+    
 
     '''
     posData = remove_repretion(posData)
