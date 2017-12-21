@@ -115,7 +115,7 @@ if __name__ == '__main__':
             testing_y.append(0)
 
     print (clf.score(testing_X,testing_y))
-    
+
 
     '''
     posData = remove_repretion(posData)
