@@ -66,24 +66,15 @@ class HandleClass:
         
 
 
-
-
-        
-        
-           
-        
-        
-    
-
 if __name__ == '__main__':
-    pos_path = "/home/charles/tool/Depression_detection/tweet-ubuntu/positive-depressed"
-    neg_path = "/home/charles/tool/Depression_detection/tweet-ubuntu/negative-undepressed"
+    pos_path = "/Users/charles_tong/Desktop/tweet/positive"
+    neg_path = "/Users/charles_tong/Desktop/tweet/negative"
     positive = HandleClass(pos_path)
     positive.ParseJson()
-
+    print("Dealing with positive files successfully!")
     negtive = HandleClass(neg_path)
     negtive.ParseJson()
-
+    print("Dealing with positive files successfully!")
 
     ''' 
     path = "/home/charles/tool/tweet-ubuntu/positive-depressed/txt/_JasmineRakhracreated_at-907409179.txt"
