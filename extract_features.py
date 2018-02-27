@@ -1,20 +1,16 @@
 import nltk;
-import enchant;
+
 import os;
-def get_txt(path):
+def get_csv(path):
     txt_path=[]
 
     fileList = os.listdir(path)
     for filename in fileList:
         file_path = os.path.join(path, filename)
-        if filename[-4:].upper() == '.TXT':
+        if filename[-4:].upper() == '.CSV':
             txt_path.append(file_path)
     return txt_path
 
-
-def isEnglishWords(word):
-    english_dict = enchant.Dict("en_US")
-    return english_dict.check(word)
 
 '''keyword == nouns,adjective,adverb'''
 def findKeyword(file_path):
@@ -25,7 +21,7 @@ def findKeyword(file_path):
         pos_tag = nltk.pos_tag(word_list)
         for i in range(len(pos_tag)):
             if pos_tag[i][1] == 'JJ' or pos_tag[i][1] == 'JJR' or pos_tag[i][1] == 'JJR' or pos_tag[i][1] == 'JJS' or pos_tag[i][1] == 'NN' or pos_tag[i][1] == 'NNS' or pos_tag[i][1] == 'NNP' or pos_tag[i][1] == 'NNPS' or pos_tag[i][1] == 'RB' or pos_tag[i][1] == 'RBR' or pos_tag[i][1] == 'RBS':
-                if isEnglishWords(pos_tag[i][0]) and len(pos_tag[i][0])>=3:
+                if len(pos_tag[i][0])>=3:
 
                     keyword_list.append(pos_tag[i][0])
         
@@ -39,8 +35,8 @@ def save_model(name,data):
 
 if __name__=='__main__':
     ##Linux address /home/charles/tool/Depression_detection/tweet-ubuntu/negative-undepressed/txt
-    pos_path = get_txt("/home/charles/tool/Depression_detection/test_tweet/positive/txt")
-    neg_path = get_txt("/home/charles/tool/Depression_detection/test_tweet/negative/txt")
+    pos_path = get_csv("/home/charles/tool/Depression_detection/test_tweet/positive/csv")
+    neg_path = get_csv("/home/charles/tool/Dcsv")
     ##Mac address
     ''' 
     pos_path = get_txt("/Users/charles_tong/Desktop/Depression-detection/tweet-ubuntu/positive-depressed/txt")

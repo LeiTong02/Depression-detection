@@ -1,7 +1,7 @@
 from google.cloud import language
 from google.cloud.language import enums
 from google.cloud.language import types
-import extract_keywords
+import extract_features
 import os
 import ast
 import csv
@@ -44,8 +44,8 @@ def GOOGLE_API(file,polarity,number):
 
 if __name__ == '__main__':
 
-    pos_path = extract_keywords.get_txt("/home/charles/tool/Depression_detection/tweet-ubuntu/positive-depressed/txt")
-    neg_path = extract_keywords.get_txt("/home/charles/tool/Depression_detection/tweet-ubuntu/negative-undepressed/txt")
+    pos_path = extract_features.get_txt("/home/charles/tool/Depression_detection/tweet-ubuntu/positive-depressed/txt")
+    neg_path = extract_features.get_txt("/home/charles/tool/Depression_detection/tweet-ubuntu/negative-undepressed/txt")
     ##Mac address
     ''' 
     pos_path = get_txt("/Users/charles_tong/Desktop/Depression-detection/tweet-ubuntu/positive-depressed/txt")
