@@ -1,8 +1,15 @@
 import  numpy as np
 import matplotlib.pyplot as plt
 import  sklearn.svm as svm
+from sklearn.svm import LinearSVR
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import train_test_split
 from nltk.corpus import sentiwordnet as swn
 import ast
+
+import pandas as pd
+from sklearn.externals import joblib
+
 def open_model(path):
 
     with open(path,'r',encoding='utf-8',errors='ignore') as f:
@@ -73,69 +80,34 @@ def extract_features(dataset):
 
 
 if __name__ == '__main__':
-    posData_path = "/home/charles/tool/Depression_detection/tweet-ubuntu/positive_model.txt"
-    negData_path = "/home/charles/tool/Depression_detection/tweet-ubuntu/negative_model.txt"
-    posData = ast.literal_eval(open_model(posData_path))
-    negData = ast.literal_eval(open_model(negData_path))
+    posData_path = "/Users/charles_tong/Desktop/Depression-detection/positive_model.csv"
+    negData_path = "/Users/charles_tong/Desktop/Depression-detection/negative_model.csv"
+    pos_csv = pd.read_csv(posData_path)
+    neg_csv = pd.read_csv(negData_path)
+    pos_model = np.array(pos_csv.iloc[:,1:14])
+    neg_model = np.array(neg_csv.iloc[:,1:14])
+    dataset= np.concatenate((pos_model,neg_model))
+    target = np.append(np.ones(len(pos_model)),np.zeros(len(neg_model)))
+    print(dataset.shape)
+    print("Strating training...")
+    svr = svm.SVC()
+    parameters = {'kernel': ('rbf', 'rbf'), 'C': [0.1,0.3,0.9,1,10], 'gamma': [0.125, 0.25, 0.5, 1, 2, 4]}
+    X_train, X_test, y_train, y_test = train_test_split(dataset,
+                                                        target,test_size=0.25)
+    print(len(X_train))
 
-    while [] in posData:
-        posData.remove([])
-    while [] in negData:
-        negData.remove([])
-
-
-
-    training_X= extract_features(posData)+extract_features(negData)
-    training_y=[]
-    for i in range(len(training_X)):
-        if len(posData) >= (i + 1):
-            training_y.append(1)
-        else:
-            training_y.append(0)
-    clf = svm.SVC()
-    clf.fit(training_X,training_y)
-
-    ##test
-    posTest_path = "/home/charles/tool/Depression_detection/tweet-ubuntu/positive.txt"
-    negTest_path = "/home/charles/tool/Depression_detection/tweet-ubuntu/negative.txt"
-    posTest = ast.literal_eval(open_model(posTest_path))
-    negTest = ast.literal_eval(open_model(negTest_path))
-
-    while [] in posTest:
-        posTest.remove([])
-    while [] in negTest:
-        negTest.remove([])
-
-    testing_X = extract_features(posTest) + extract_features(negTest)
-    testing_y = []
-    for i in range(len(testing_X)):
-        if len(posTest) >= (i + 1):
-            testing_y.append(1)
-        else:
-            testing_y.append(0)
-
-    print (clf.score(testing_X,testing_y))
+    ##joblib.dump(clf,"/Users/charles_tong/Desktop/Depression-detection/classifier_model/svm.model")
+    clf = GridSearchCV(svr,parameters)
+    clf.fit(X_train,y_train)
+    print("over")
+    print(clf.best_params_)
+    print(clf.best_score_)
+    print("Test Accuracy: %f"%clf.score(X_test,y_test))
 
 
-    '''
-    posData = remove_repretion(posData)
-    negData = remove_repretion(negData)
 
-    max_pos = len(posData[0])
-    max_neg = len(negData[0])
-    max_length = compare(max_pos,max_neg)
 
-    traing_X = posData+negData
-    traing_y = []
-    ## add 0
-    for line in  range(len(traing_X)):
-        if len(traing_X[line])<max_length:
-            traing_X[line]+=list(np.zeros(max_length-len(traing_X[line])))
-        if len(posData) <= (line+1) :
-            traing_y.append(1)
-        else:
-            traing_y.append(0)
 
-    '''
+
 
 
