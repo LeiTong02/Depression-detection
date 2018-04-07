@@ -44,6 +44,7 @@ def extract_csv(path):
         text_Series = csv.text
         pos_words = 0
         neg_words = 0
+        '''Should modify here for specifying word class'''
         for text in text_Series:
             for word in text:
                 if len(list(swn.senti_synsets(word)))>0:

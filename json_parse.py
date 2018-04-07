@@ -14,29 +14,16 @@ import csv
 import pandas as pd
 from Model import Tweet
 from text_preprocess import *
-
-
-def regular_express(tweet):
-    # Convert to lower case
-    tweet = tweet.lower()
-    # Convert www.* or https?://* to URL
-    tweet = re.sub('((www\.[^\s]+)|(https?://[^\s]+))', 'URL', tweet)
-    # Convert @username to AT_USER
-    tweet = re.sub('@[^\s]+', 'AT_USER', tweet)
-    # Remove additional white spaces
-    tweet = re.sub('[\s]+', ' ', tweet)
-    # Replace #word with word
-    tweet = re.sub(r'#([^\s]+)', r'\1', tweet)
-    # trim
-    tweet = tweet.strip('\'"')
-    return tweet
+import re
+from stop_words import get_stop_words
+import nltk
 
 
 
 class HandleClass:
     def __init__(self,path):
         self.__path = path
-        
+
     def __get_py(self,path,json_path):
         fileList = os.listdir(path)
         for filename in fileList:
@@ -44,7 +31,7 @@ class HandleClass:
             if os.path.isdir(file_path):
                 self.__get_py(file_path,json_path)
             elif filename[-5:].upper()=='.JSON':
-                json_path.append(file_path)              
+                json_path.append(file_path)
         return json_path
 
 
@@ -53,41 +40,61 @@ class HandleClass:
         json_path = self.__get_py(self.__path,json_path)
         print(len(json_path))
         count = 0
+
         for json_file in json_path:
 
-            tweet_dict = {'created_at': [], 'text': [], 'retweet_count': [], 'favorite_count': [],
+            tweet_dict = {'created_at': [],'stem_text':[],'lemma_text':[], 'retweet_count': [], 'favorite_count': [],
                           'lang': [], 'mention_count': [], 'followers_count': [], 'friends_count': []
-                , 'total_favourites_count': [], 'listed_count': [],'emoji_count': [],'emoticon_count': []}
+                , 'total_favourites_count': [], 'listed_count': [],'emoji_count': [],'emoticon_count': [],
+                'polarity':[],'statues_count':[],'background_color':[],'link_color':[],'sidebar_border_color':[],
+                'sidebar_fill_color':[],'text_color':[],'truncated':[],'is_quote_status':[]}
 
             filename = json_file.split("/")[-1]
             filename = filename[:-5] + '.csv'
             csv_file = os.path.join(self.__path, "csv", filename)
             with open(json_file,'r',encoding="utf-8",errors="ignore") as f:
-
+                print(json_file)
                 for line in f:
+                    '''Load data from Json'''
                     json_data = json.loads(line)
-                    tweet_createAT  = json_data['created_at']
-                    tweet_text = regular_express(json_data['text'])
-                    tweet_reweet  = int(json_data['retweet_count'])
-                    tweet_favorite = int(json_data['favorite_count'])
+
                     tweet_lang = json_data['lang']
-                    tweet_mention = len(json_data['entities']['user_mentions'])
+                    if tweet_lang=="en":
+                        tweet_createAT = json_data['created_at']
+                        tweet_text = regular_express(json_data['text'])
+                        tweet_reweet = int(json_data['retweet_count'])
+                        tweet_favorite = int(json_data['favorite_count'])
+                        tweet_mention = len(json_data['entities']['user_mentions'])
+                        user_follower = int(json_data['user']['followers_count'])
+                        user_friend = int(json_data['user']['friends_count'])
+                        user_favourites = int(json_data['user']['favourites_count'])
+                        user_listed = int(json_data['user']['listed_count'])
+                        tweet_statues =  int(json_data['user']['statuses_count'])
+                        tweet_bg_color = json_data['user']['profile_background_color']
+                        tweet_link_color = json_data['user']['profile_link_color']
+                        tweet_sb_border_color = json_data['user']['profile_sidebar_border_color']
+                        tweet_sb_fill_color = json_data['user']['profile_sidebar_fill_color']
+                        tweet_text_color = json_data['user']['profile_text_color']
+                        tweet_quote_status = json_data['is_quote_status']
+                        tweet_truncated = json_data['truncated']
 
-                    user_follower = int(json_data['user']['followers_count'])
-                    user_friend = int(json_data['user']['friends_count'])
-                    user_favourites = int(json_data['user']['favourites_count'])
-                    user_listed = int(json_data['user']['listed_count'])
 
-                    if tweet_lang =='en':
-
-                        tweet_dict['created_at'].append(tweet_createAT)
-
+                        '''Remove number and stop words'''
                         emoji_class = process_emoji(tweet_text)
+
                         tweet_text = emoji_class.newText
-                        tweet_text = Stemming(tweet_text)
-                        tweet_dict['text'].append(tweet_text)
+
+                        tweet_text =re.sub(r'[\d]+','',tweet_text)
+                        tweet_text = tweet_text.strip()
+
+                        stem_text = Stemming(tweet_text)
+                        lemma_text = lemmatize_sentence(tweet_text)
 
 
+                        '''Store in dict'''
+                        tweet_dict['created_at'].append(tweet_createAT)
+                        tweet_dict['stem_text'].append(stem_text)
+                        tweet_dict['lemma_text'].append(lemma_text)
                         tweet_dict['retweet_count'].append(tweet_reweet)
                         tweet_dict['favorite_count'].append(tweet_favorite)
                         tweet_dict['lang'].append(tweet_lang)
@@ -98,11 +105,16 @@ class HandleClass:
                         tweet_dict['listed_count'].append(user_listed)
                         tweet_dict['emoji_count'].append(emoji_class.emoji_count)
                         tweet_dict['emoticon_count'].append(emoji_class.emoticon_count)
+                        tweet_dict['polarity'].append(emoji_class.sen_polarity)
+                        tweet_dict['statues_count'].append(tweet_statues)
+                        tweet_dict['background_color'].append(tweet_bg_color)
+                        tweet_dict['link_color'].append(tweet_link_color)
+                        tweet_dict['sidebar_border_color'].append(tweet_sb_border_color)
+                        tweet_dict['sidebar_fill_color'].append(tweet_sb_fill_color)
+                        tweet_dict['text_color'].append(tweet_text_color)
 
-
-                    else:
-                        pass
-                        continue
+                        tweet_dict['is_quote_status'].append(tweet_quote_status)
+                        tweet_dict['truncated'].append(tweet_truncated)
 
             count+=1
             print("Current: count=%d"%(count))
@@ -110,7 +122,7 @@ class HandleClass:
             pd.DataFrame(tweet_dict).to_csv(csv_file)
 
 
-        
+
 
 
 if __name__ == '__main__':
@@ -129,6 +141,5 @@ if __name__ == '__main__':
         data = ast.literal_eval(f.read())
         print(len(data))
     '''
-        
-    
-    
+
+
