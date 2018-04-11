@@ -84,7 +84,8 @@ class HandleClass:
 
                         tweet_text = emoji_class.newText
 
-                        tweet_text =re.sub(r'[\d]+','',tweet_text)
+                        tweet_text =re.sub(r'[\d]+',' number ',tweet_text)
+                        tweet_text =re.sub(r"[\s]+", ' ', tweet_text)
                         tweet_text = tweet_text.strip()
 
                         stem_text = Stemming(tweet_text)
