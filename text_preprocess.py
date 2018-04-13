@@ -4,12 +4,12 @@ import re
 from nltk.stem.snowball import SnowballStemmer
 import nltk
 from nltk import TweetTokenizer
-import string
+
 from nltk.corpus import wordnet
 from nltk import word_tokenize, pos_tag
 from nltk.stem import WordNetLemmatizer
 from textblob import TextBlob
-from stop_words import get_stop_words
+
 tokenizer = TweetTokenizer()
 class emojiClass:
 
@@ -20,18 +20,20 @@ class emojiClass:
         self.sen_polarity  = sen_polarity
         self.sen_subjectivity = sen_subjectivity
 def process_emoji(tweets):
-    stop_words = get_stop_words("en")
+    ##stop_words = get_stop_words("en")
 
     emoji_count = len(emot.emoji(tweets))
     emoticon_count = len(emot.emoticons(tweets))
-    '''remove stop-words'''
+
+    '''remove stop-words
     text_token = tokenizer.tokenize(tweets)
     non_stop_token = [word for word in text_token if word not in stop_words]
     non_stop_text = " ".join(non_stop_token)
+    '''
 
     '''remove non-ascii letters'''
 
-    new_string = re.sub(r"[^\w]", " ", non_stop_text)
+    new_string = re.sub(r"[^\w']", " ", tweets)
     new_string = re.sub(r"[\s]+", ' ', new_string)
     new_string = new_string.strip()
 
@@ -61,7 +63,7 @@ def regular_express(tweet):
     # Convert www.* or https?://* to URL
     tweet = re.sub('((www\.[^\s]+)|(https?://[^\s]+))', 'URL', tweet)
     # Convert @username to AT_USER
-    tweet = re.sub(r'(rt @[^\s]+)|(@[^\s]+)', ' ', tweet)
+    tweet = re.sub(r'(rt @[^\s]+)|(^rt [^\s]+)|(@[^\s]+)', ' ', tweet)
 
     # Remove additional white spaces
     tweet = re.sub('[\s]+', ' ', tweet)

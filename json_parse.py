@@ -8,15 +8,11 @@ Created on Thu Dec  7 10:11:38 2017
 import os
 import os.path
 import json
-import ast
-import re
-import csv
+
 import pandas as pd
-from Model import Tweet
+
 from text_preprocess import *
-import re
-from stop_words import get_stop_words
-import nltk
+
 
 
 
@@ -43,7 +39,7 @@ class HandleClass:
 
         for json_file in json_path:
 
-            tweet_dict = {'created_at': [],'stem_text':[],'lemma_text':[], 'retweet_count': [], 'favorite_count': [],
+            tweet_dict = {'created_at': [],'text':[], 'retweet_count': [], 'favorite_count': [],
                           'lang': [], 'mention_count': [], 'followers_count': [], 'friends_count': []
                 , 'total_favourites_count': [], 'listed_count': [],'emoji_count': [],'emoticon_count': [],
                 'polarity':[],'statues_count':[],'background_color':[],'link_color':[],'sidebar_border_color':[],
@@ -78,11 +74,10 @@ class HandleClass:
                         tweet_quote_status = json_data['is_quote_status']
                         tweet_truncated = json_data['truncated']
 
-
-                        '''Remove number and stop words'''
                         emoji_class = process_emoji(tweet_text)
-
                         tweet_text = emoji_class.newText
+                        '''Remove number and stop words
+                        
 
                         tweet_text =re.sub(r'[\d]+',' number ',tweet_text)
                         tweet_text =re.sub(r"[\s]+", ' ', tweet_text)
@@ -90,12 +85,13 @@ class HandleClass:
 
                         stem_text = Stemming(tweet_text)
                         lemma_text = lemmatize_sentence(tweet_text)
+                        '''
 
 
                         '''Store in dict'''
                         tweet_dict['created_at'].append(tweet_createAT)
-                        tweet_dict['stem_text'].append(stem_text)
-                        tweet_dict['lemma_text'].append(lemma_text)
+                        tweet_dict['text'].append(tweet_text)
+
                         tweet_dict['retweet_count'].append(tweet_reweet)
                         tweet_dict['favorite_count'].append(tweet_favorite)
                         tweet_dict['lang'].append(tweet_lang)

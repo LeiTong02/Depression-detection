@@ -69,6 +69,7 @@ classifier = nltk.classify.NaiveBayesClassifier.train(training_set)
 tweet = 'Your song is annoying'
 print
 classifier.classify(extract_features(tweet.split()))
+print(extract_features(tweet.split()))
 
 classifier.show_most_informative_features(5)
 
