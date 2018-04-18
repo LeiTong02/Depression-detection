@@ -80,8 +80,8 @@ def extract_features(dataset):
 
 
 if __name__ == '__main__':
-    posData_path = "/Users/charles_tong/Desktop/Depression-detection/positive_model.csv"
-    negData_path = "/Users/charles_tong/Desktop/Depression-detection/negative_model.csv"
+    posData_path = "/home/lt228/Desktop/Depression-detection/positive_model.csv"
+    negData_path = "/home/lt228/Desktop/Depression-detection/negative_model.csv"
     pos_csv = pd.read_csv(posData_path)
     neg_csv = pd.read_csv(negData_path)
     pos_model = np.array(pos_csv.iloc[:,1:14])
