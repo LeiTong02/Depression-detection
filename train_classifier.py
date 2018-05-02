@@ -6,6 +6,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
 from nltk.corpus import sentiwordnet as swn
 import ast
+from sklearn.ensemble import RandomForestClassifier
 
 import pandas as pd
 from sklearn.externals import joblib

@@ -37,7 +37,7 @@ class HandleClass:
         print(len(json_path))
         count = 0
 
-        for json_file in json_path:
+        for json_file in json_path[3276:]:
 
             tweet_dict = {'created_at': [],'text':[], 'retweet_count': [], 'favorite_count': [],
                    'en':[],    'mention_count': [], 'followers_count': [], 'friends_count': []
@@ -79,6 +79,8 @@ class HandleClass:
                                 continue
                             else:
                                 if len(str(tb))>=3:
+
+
                                     if tb.detect_language() != 'en':
                                         pass
                                     else:
@@ -173,13 +175,15 @@ class HandleClass:
 if __name__ == '__main__':
     pos_path = "/home/lt228/Desktop/tweet/positive"
     neg_path = "/home/lt228/Desktop/tweet/negative"
-    positive = HandleClass(pos_path)
-    json_path = []
-    path = positive.get_py(pos_path,json_path)
 
-    positive.ParseJson()
-    print("Dealing with positive files successfully!")
+    # positive = HandleClass(pos_path)
+    #
+    # positive.ParseJson()
+    # print("Dealing with positive files successfully!")
+
     negtive = HandleClass(neg_path)
+
+
     negtive.ParseJson()
     print("Dealing with negative files successfully!")
 
