@@ -4,7 +4,6 @@ import re
 from nltk.stem.snowball import SnowballStemmer
 import nltk
 from nltk import TweetTokenizer
-
 from nltk.corpus import wordnet
 from nltk import word_tokenize, pos_tag
 from nltk.stem import WordNetLemmatizer
@@ -33,19 +32,21 @@ def process_emoji(tweets):
 
     '''remove non-ascii letters'''
 
-    new_string = re.sub(r"[^\w']", " ", tweets)
+    new_string = re.sub(r"[^a-zA-Z0-9']", " ", tweets)
     new_string = re.sub(r"[\s]+", ' ', new_string)
     new_string = new_string.strip()
 
-    '''Textblob: Spell correction and analysis polarity'''
+    '''Textblob: Spell correction and analysis polarity
     text_blob = TextBlob(new_string)
     correct_string = str(text_blob.correct())
 
     polarity = text_blob.sentiment.polarity
     subjectity = text_blob.sentiment.subjectivity
+    
     emoji_result= emojiClass(correct_string,emoji_count,emoticon_count,polarity,subjectity)
+    '''
 
-    return emoji_result
+    return new_string,emoji_count,emoticon_count
 
 '''2. Steming'''
 def Stemming(tweets):
@@ -95,6 +96,7 @@ def lemmatize_sentence(sentence):
         res.append(lemmatizer.lemmatize(word, pos=wordnet_pos))
     res = " ".join(res)
     return res
+
 
 
 

@@ -42,7 +42,7 @@ class HandleClass:
             tweet_dict = {'created_at': [],'text':[], 'retweet_count': [], 'favorite_count': [],
                           'lang': [], 'mention_count': [], 'followers_count': [], 'friends_count': []
                 , 'total_favourites_count': [], 'listed_count': [],'emoji_count': [],'emoticon_count': [],
-                'polarity':[],'statues_count':[],'background_color':[],'link_color':[],'sidebar_border_color':[],
+                'statues_count':[],'background_color':[],'link_color':[],'sidebar_border_color':[],
                 'sidebar_fill_color':[],'text_color':[],'truncated':[],'is_quote_status':[]}
 
             filename = json_file.split("/")[-1]
@@ -74,8 +74,8 @@ class HandleClass:
                         tweet_quote_status = json_data['is_quote_status']
                         tweet_truncated = json_data['truncated']
 
-                        emoji_class = process_emoji(tweet_text)
-                        tweet_text = emoji_class.newText
+                        new_string,emoji_count,emoticon_count = process_emoji(tweet_text)
+
                         '''Remove number and stop words
                         
 
@@ -90,7 +90,7 @@ class HandleClass:
 
                         '''Store in dict'''
                         tweet_dict['created_at'].append(tweet_createAT)
-                        tweet_dict['text'].append(tweet_text)
+                        tweet_dict['text'].append(new_string)
 
                         tweet_dict['retweet_count'].append(tweet_reweet)
                         tweet_dict['favorite_count'].append(tweet_favorite)
@@ -100,9 +100,9 @@ class HandleClass:
                         tweet_dict['friends_count'].append(user_friend)
                         tweet_dict['total_favourites_count'].append(user_favourites)
                         tweet_dict['listed_count'].append(user_listed)
-                        tweet_dict['emoji_count'].append(emoji_class.emoji_count)
-                        tweet_dict['emoticon_count'].append(emoji_class.emoticon_count)
-                        tweet_dict['polarity'].append(emoji_class.sen_polarity)
+                        tweet_dict['emoji_count'].append(emoji_count)
+                        tweet_dict['emoticon_count'].append(emoticon_count)
+
                         tweet_dict['statues_count'].append(tweet_statues)
                         tweet_dict['background_color'].append(tweet_bg_color)
                         tweet_dict['link_color'].append(tweet_link_color)

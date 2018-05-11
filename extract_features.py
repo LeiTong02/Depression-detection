@@ -4,7 +4,7 @@ import pandas as pd
 import time
 import os;
 from Model import Tweet
-
+import re
 
 def get_csv(path):
     txt_path=[]
@@ -44,9 +44,12 @@ def extract_csv(path):
         text_Series = csv.text
         pos_words = 0
         neg_words = 0
+        each_doc = ''
         '''Should modify here for specifying word class'''
         for text in text_Series:
-            for word in text:
+            text = re.sub(u'URL', ' ', str(text))
+            each_doc = str(each_doc) + ' ' + text
+            for word in text.split():
                 if len(list(swn.senti_synsets(word)))>0:
                     for synset in swn.senti_synsets(word):
                         score = synset
@@ -59,7 +62,7 @@ def extract_csv(path):
         neg_words= neg_words/rows
         tweet_class = Tweet(nightTime_count, pos_words, neg_words, emojis, emoticons
                             , retweet_count, favorites, listed_count, mention_count, followers
-                            , friends_count, total_favourites_count, rows)
+                            , friends_count, total_favourites_count, rows,each_doc)
         return tweet_class
 
 
@@ -92,11 +95,11 @@ if __name__=='__main__':
     pos_dict = {"nightTime_count": [], "pos_words": [], "neg_words": [], "emojis": [],
                 "emoticons": [], "retweet_count": [], "favorites": [], "listed_count": [],
                 "mention_count": [], "followers": [], "friends_count": [],
-                "total_favourites_count": [], "total_post": []}
+                "total_favourites_count": [], "total_post": [],'corpus':[]}
     neg_dict = {"nightTime_count": [], "pos_words": [], "neg_words": [], "emojis": [],
                 "emoticons": [], "retweet_count": [], "favorites": [], "listed_count": [],
                 "mention_count": [], "followers": [], "friends_count": [],
-                "total_favourites_count": [], "total_post": []}
+                "total_favourites_count": [], "total_post": [],'corpus':[]}
 
     for pos_csv in pos_path:
         tweet= extract_csv(pos_csv)
@@ -114,6 +117,7 @@ if __name__=='__main__':
             pos_dict["friends_count"].append(tweet.friend_count_user)
             pos_dict["total_favourites_count"].append(tweet.total_favorite)
             pos_dict["total_post"].append(tweet.total_posts)
+            pos_dict['corpus'].append(tweet.corpus)
 
             print(pos_path.index(pos_csv))
     save_model("positive_model",pos_dict)
@@ -136,6 +140,7 @@ if __name__=='__main__':
             neg_dict["friends_count"].append(tweet.friend_count_user)
             neg_dict["total_favourites_count"].append(tweet.total_favorite)
             neg_dict["total_post"].append(tweet.total_posts)
+            neg_dict['corpus'].append(tweet.corpus)
 
             print(neg_path.index(neg_csv))
 
