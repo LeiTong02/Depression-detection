@@ -2,215 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ced04d-e070-4f68-ac77-bea99593b424" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Depression_detection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Depression_detection.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv_result.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/json_parse.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_01imthebestcreated_at-957773090.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_1010starcreated_at-1215938528.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_6k8kcreated_at-1380258816.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_7100Screated_at180601369.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_7Figurescreated_at-828690371.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_9i9ocreated_at-699607652.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_AeroUnlimitedcreated_at1119417971.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__A1bitchcreated_at-828690371.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__Ajibolacreated_at-699607652.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__AliiaSGcreated_at-77564069.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__BIGREDcreated_at-1509341535.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__Gvldieecreated_at16281081.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__HighandMightycreated_at-828690371.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__Phuonghuyen__created_at861252533.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__Say_yes__created_at-277121926.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__ThatGirlJazzcreated_at274446519.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__TooooMuchcreated_at274446519.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__Tyrellocreated_at-77564069.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__Von24created_at474004376.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/___Destineeeecreated_at-1086855809.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/___Keancreated_at-793452802.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/___PlayaMadeMyacreated_at-500049795.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/____kashawnacreated_at474004376.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/___orereocreated_at-406204645.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/___orereocreated_at567849526.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/___orereocreated_at732169814.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__andresnavarrocreated_at-699607652.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__biggheaaddcreated_at274446519.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__cecethegreatcreated_at-1215938528.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__destinyrosecreated_at-535287364.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__giiannacreated_at-828690371.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__hyt6I3created_at-1215938528.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__hyt6I3created_at603087095.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__iAi___created_at532611957.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__iAi___created_at826014964.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__iDolecreated_at-312359495.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__itz__angel__created_at990335252.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__kcamcreated_at-793452802.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__queencececreated_at990335252.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__rir_iicreated_at-993010659.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__t_a_icreated_at532611957.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__trinnnncreated_at-1122093378.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__um___created_at-148039207.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/__whoistylercreated_at-535287364.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_aalyssa_created_at1119417971.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_aayxhcreated_at438766807.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_ajahhhboocreated_at-734845221.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_alexandria3created_at-183276776.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_ao9icreated_at-206646788.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/_armoredjamescreated_at-1122093378.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_01imthebestcreated_at-957773090.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_1010starcreated_at-1215938528.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_6k8kcreated_at-1380258816.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_7100Screated_at180601369.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_7Figurescreated_at-828690371.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_9i9ocreated_at-699607652.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_AeroUnlimitedcreated_at1119417971.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__A1bitchcreated_at-828690371.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__Ajibolacreated_at-699607652.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__AliiaSGcreated_at-77564069.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__BIGREDcreated_at-1509341535.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__Gvldieecreated_at16281081.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__HighandMightycreated_at-828690371.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__Phuonghuyen__created_at861252533.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__Say_yes__created_at-277121926.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__ThatGirlJazzcreated_at274446519.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__TooooMuchcreated_at274446519.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__Tyrellocreated_at-77564069.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__Von24created_at474004376.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/___Destineeeecreated_at-1086855809.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/___Keancreated_at-793452802.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/___PlayaMadeMyacreated_at-500049795.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/____kashawnacreated_at474004376.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/___orereocreated_at-406204645.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/___orereocreated_at567849526.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/___orereocreated_at732169814.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__andresnavarrocreated_at-699607652.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__biggheaaddcreated_at274446519.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__cecethegreatcreated_at-1215938528.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__destinyrosecreated_at-535287364.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__giiannacreated_at-828690371.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__hyt6I3created_at-1215938528.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__hyt6I3created_at603087095.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__iAi___created_at532611957.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__iAi___created_at826014964.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__iDolecreated_at-312359495.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__itz__angel__created_at990335252.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__kcamcreated_at-793452802.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__queencececreated_at990335252.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__rir_iicreated_at-993010659.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__t_a_icreated_at532611957.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__trinnnncreated_at-1122093378.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__um___created_at-148039207.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/__whoistylercreated_at-535287364.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_aalyssa_created_at1119417971.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_aayxhcreated_at438766807.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_ajahhhboocreated_at-734845221.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_alexandria3created_at-183276776.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_ao9icreated_at-206646788.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative-undepressed/txt/_armoredjamescreated_at-1122093378.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/negative_model.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_7OAKcreated_at-904560858.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_AlondraLaracreated_at1461354121.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_Always_Here_4Ucreated_at2841379.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_AngelAlone_created_at1200302361.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_AngelaXOXOcreated_at-652055910.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_Angels212created_at1251510979.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_Articzcreated_at672692685.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_BarnabasCollincreated_at-2071901190.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_BitchInBoots_created_at977354830.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_EpicDuckcreated_at-1887277379.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_Fred_Brent_created_at-1128405573.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_JasmineRakhracreated_at-907409179.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_Jdemulcreated_at593942749.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_Jen_Bug_created_at1483430133.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_KaitlynnLeecreated_at-1769170670.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_MiZz_MurDeR_created_at-1239345462.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_Murderbydeathcreated_at-1470486676.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_Party_Monster_created_at625758160.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_Pulchritudeee_created_at755255643.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_SincerelyKatecreated_at1649507714.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/__LyfeQuotes_created_at1418083719.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/___Depressed_created_at2100827011.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/______Sun______created_at2039235827.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/___bandsarelifecreated_at791981320.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/__istinechraycreated_at-946571469.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_believein_you_created_at-1540658888.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_bluelightblue_created_at2039070385.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_bszabescreated_at1560788177.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_cakecakecake_created_at-2015509019.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_cakecakecake_created_at161730442.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_carinaxxcreated_at1926297357.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_correctomundocreated_at2146815829.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_cut_to_feel_created_at424511056.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_joserralopezcreated_at-1538861884.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_juliewincreated_at-1914282882.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_katie_jacksoncreated_at-729824810.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_kimberly_c_hcreated_at-1649301308.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_kuminekocreated_at1716793101.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_letmedie_1created_at-465159999.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_littleprescreated_at-1260960962.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_lunalacreated_at-1977363104.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_makayla_raecreated_at1994536579.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_megannccreated_at1597834580.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_mermaidqueen_created_at-739040281.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_mindtripscreated_at734346578.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_my_life_line_created_at1410437453.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_nurseoliviacreated_at-2127443712.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_pretzelhandscreated_at639806501.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/_pursuitofhappcreated_at916595344.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_7OAKcreated_at-904560858.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_AlondraLaracreated_at1461354121.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_Always_Here_4Ucreated_at2841379.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_AngelAlone_created_at1200302361.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_AngelaXOXOcreated_at-652055910.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_Angels212created_at1251510979.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_Articzcreated_at672692685.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_BarnabasCollincreated_at-2071901190.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_BitchInBoots_created_at977354830.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_EpicDuckcreated_at-1887277379.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_Fred_Brent_created_at-1128405573.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_JasmineRakhracreated_at-907409179.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_Jdemulcreated_at593942749.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_Jen_Bug_created_at1483430133.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_KaitlynnLeecreated_at-1769170670.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_MiZz_MurDeR_created_at-1239345462.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_Murderbydeathcreated_at-1470486676.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_Party_Monster_created_at625758160.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_Pulchritudeee_created_at755255643.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_SincerelyKatecreated_at1649507714.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/__LyfeQuotes_created_at1418083719.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/___Depressed_created_at2100827011.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/______Sun______created_at2039235827.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/___bandsarelifecreated_at791981320.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/__istinechraycreated_at-946571469.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_believein_you_created_at-1540658888.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_bluelightblue_created_at2039070385.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_bszabescreated_at1560788177.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_cakecakecake_created_at-2015509019.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_cakecakecake_created_at161730442.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_carinaxxcreated_at1926297357.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_correctomundocreated_at2146815829.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_cut_to_feel_created_at424511056.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_joserralopezcreated_at-1538861884.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_juliewincreated_at-1914282882.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_katie_jacksoncreated_at-729824810.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_kimberly_c_hcreated_at-1649301308.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_kuminekocreated_at1716793101.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_letmedie_1created_at-465159999.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_littleprescreated_at-1260960962.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_lunalacreated_at-1977363104.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_makayla_raecreated_at1994536579.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_megannccreated_at1597834580.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_mermaidqueen_created_at-739040281.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_mindtripscreated_at734346578.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_my_life_line_created_at1410437453.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_nurseoliviacreated_at-2127443712.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_pretzelhandscreated_at639806501.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive-depressed/txt/_pursuitofhappcreated_at916595344.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet-ubuntu/positive_model.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -255,7 +48,7 @@
       <file leaf-file-name="extract_features.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extract_features.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1990">
+            <state relative-caret-position="4466">
               <caret line="215" selection-start-line="215" selection-end-line="215" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -268,10 +61,7 @@
         <entry file="file://$PROJECT_DIR$/json_parse.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-              <folding>
-                <element signature="e#109#118#0" expanded="true" />
-              </folding>
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -279,8 +69,26 @@
       <file leaf-file-name="train_classifier.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-946">
-              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="176">
+              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bagging.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/bagging.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13420">
+              <caret line="631" column="18" selection-start-line="631" selection-start-column="18" selection-end-line="631" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -288,8 +96,26 @@
       <file leaf-file-name="forest.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/forest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="992" column="40" lean-forward="true" selection-start-line="992" selection-start-column="40" selection-end-line="992" selection-end-column="40" />
+            <state relative-caret-position="21274">
+              <caret line="992" column="42" selection-start-line="992" selection-start-column="42" selection-end-line="992" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/tree/tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_criterion.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-53098168/sklearn/tree/_criterion.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3256">
+              <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -307,6 +133,7 @@
     <findStrings>
       <find>rum</find>
       <find>tweet</find>
+      <find>Random</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -325,8 +152,9 @@
         <option value="$PROJECT_DIR$/Model.py" />
         <option value="$PROJECT_DIR$/text_preprocess.py" />
         <option value="$PROJECT_DIR$/extract_features.py" />
-        <option value="$PROJECT_DIR$/json_parse.py" />
         <option value="$PROJECT_DIR$/train_classifier.py" />
+        <option value="$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/tree/tree.py" />
+        <option value="$PROJECT_DIR$/json_parse.py" />
       </list>
     </option>
   </component>
@@ -339,11 +167,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="142" />
-    <option name="y" value="158" />
-    <option name="width" value="1394" />
-    <option name="height" value="976" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="2702" />
+    <option name="y" value="37" />
+    <option name="width" value="928" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -366,7 +194,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -508,17 +336,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="2702" y="37" width="928" height="1056" extended-state="4" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32864675" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.2749213" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5424974" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.014687883" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32948583" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2614728" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37188208" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="5" weight="0.32946378" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -547,6 +374,55 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/train_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/bagging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13420">
+          <caret line="631" column="18" lean-forward="true" selection-start-line="631" selection-start-column="18" selection-end-line="631" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/forest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21274">
+          <caret line="992" column="42" lean-forward="true" selection-start-line="992" selection-start-column="42" selection-end-line="992" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/tree/tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-53098168/sklearn/tree/_criterion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3256">
+          <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json_parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/text_preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
@@ -578,9 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
           <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding>
-            <element signature="e#109#118#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,9 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2750">
           <caret line="133" column="8" lean-forward="true" selection-start-line="133" selection-start-column="8" selection-end-line="135" selection-end-column="39" />
-          <folding>
-            <element signature="e#109#118#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -642,9 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2178">
           <caret line="105" column="84" selection-start-line="105" selection-start-column="84" selection-end-line="105" selection-end-column="84" />
-          <folding>
-            <element signature="e#109#118#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,9 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <element signature="e#109#118#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,9 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2530">
           <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
-          <folding>
-            <element signature="e#109#118#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -712,9 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#109#118#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -730,9 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#109#118#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-53098168/sklearn/tree/_criterion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -796,30 +644,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/tree/tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/forest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="992" column="40" lean-forward="true" selection-start-line="992" selection-start-column="40" selection-end-line="992" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-946">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extract_features.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1990">
+        <state relative-caret-position="4466">
           <caret line="215" selection-start-line="215" selection-end-line="215" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
@@ -827,13 +654,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/bagging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13420">
+          <caret line="631" column="18" selection-start-line="631" selection-start-column="18" selection-end-line="631" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/forest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21274">
+          <caret line="992" column="42" selection-start-line="992" selection-start-column="42" selection-end-line="992" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-53098168/sklearn/tree/_criterion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3256">
+          <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/tree/tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/json_parse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding>
-            <element signature="e#109#118#0" expanded="true" />
-          </folding>
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
